@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.promineotech.jeep.controller.FetchJeepTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 4.352 s - in com.promineotech.jeep.controller.FetchJeepTest

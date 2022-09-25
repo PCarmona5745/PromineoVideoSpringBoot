@@ -20,7 +20,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
 //any uri that has /jeeps after the port number, will get mapped to this class.
 @RequestMapping("/jeeps")
 @OpenAPIDefinition(info = @Info(title = "Jeep Sales Service"),
-    servers = {@Server(url = "http://localhost:8080", description = "Local server.")})
+    servers = {@Server(url = "http://localhost:8080", description = "Local server; accessible over public internet.")})
 //this is just an interface that must be implemented!
 public interface JeepSalesController {
 

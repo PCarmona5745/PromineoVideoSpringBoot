@@ -10,11 +10,12 @@ public class BaseTest {
   private int serverPort;
   
   @Autowired
-  @Getter
+  @Getter //lombok makes a standard getter (check the outline for getRestTemplate()   )
   private TestRestTemplate restTemplate;
   
   
   protected String getBaseUri() {
     return String.format("http://localhost:%d/jeeps", serverPort);
+    
   }
 }
