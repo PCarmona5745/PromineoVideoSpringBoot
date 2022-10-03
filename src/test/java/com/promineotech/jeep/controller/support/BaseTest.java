@@ -6,6 +6,7 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import lombok.Getter;
 
 public class BaseTest {
+  
   @LocalServerPort
   private int serverPort;
   
