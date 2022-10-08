@@ -13,4 +13,15 @@ public class Tire {
   private String manufacturer;
   private BigDecimal price;
   private int warrantyMiles;
+  
+  Tire(){}
+  
+  Tire(Long tirePK, String tireId, String tireSize, String manufacturer, BigDecimal price, int warrantyMiles){
+    this.tirePK = tirePK;
+    this.tireId = tireId;
+    this.tireSize = tireSize;
+    this.manufacturer = manufacturer;
+    this.price = price;
+    this.warrantyMiles = warrantyMiles;
+  }
 }

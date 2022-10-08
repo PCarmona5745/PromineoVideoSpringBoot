@@ -46,7 +46,7 @@ class FetchJeepTest extends FetchJeepTestSuport {
       // Given: a valid model, trim and URI
       JeepModel model = JeepModel.WRANGLER;
       String trim = "Sport";
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       // When: a connection is made to the URI
       ResponseEntity<List<Jeep>> response = getRestTemplate().exchange(uri, HttpMethod.GET, null,
@@ -71,7 +71,7 @@ class FetchJeepTest extends FetchJeepTestSuport {
       // Given: a valid model, trim and URI
       JeepModel model = JeepModel.WRANGLER;
       String trim = "Unknown Value";
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       // When: a connection is made to the URI
       ResponseEntity<Map<String, Object>> response = getRestTemplate().exchange(uri, HttpMethod.GET,
@@ -94,7 +94,7 @@ class FetchJeepTest extends FetchJeepTestSuport {
         String reason) {
       // Given: a valid model, trim and URI
 
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       // When: a connection is made to the URI
       ResponseEntity<Map<String, Object>> response = getRestTemplate().exchange(uri, HttpMethod.GET,
@@ -143,7 +143,7 @@ class FetchJeepTest extends FetchJeepTestSuport {
       // Given:
       JeepModel model = JeepModel.WRANGLER;
       String trim = "invalid";
-      String uri = String.format("%s?model=%s&trim=%s", getBaseUri(), model, trim);
+      String uri = String.format("%s?model=%s&trim=%s", getBaseUriForJeeps(), model, trim);
 
       
       //mock makes the jeep sales service throw an exception when a model/trim is fetched

@@ -17,4 +17,19 @@ public class Engine {
   private boolean hasStartStop;
   private String description;
   private BigDecimal price;
+  
+  Engine(){}
+  
+  Engine(Long enginePK, String engineId, Float sizeInLiters, String name, FuelType fuelType, Float mpgCity, Float mpgHwy, boolean hasStartStop, String description, BigDecimal price){
+    this.enginePK = enginePK;
+    this.engineId = engineId;
+    this.sizeInLiters = sizeInLiters;
+    this.name = name;
+    this.fuelType = fuelType;
+    this.mpgCity = mpgCity;
+    this.mpgHwy = mpgHwy;
+    this.hasStartStop = hasStartStop;
+    this.description = description;
+    this.price = price;
+  }
 }
